@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --background-color: background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  --app-blue: #4A80F0;
+  --app-black: #383838;
+}
+* {
+  font-family: 'Raleway', sans-serif;
+  color: var(--app-black)
+}
+.App{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+.Dictionary-app{
+  padding: 65px 24px 0px 24px;
+  text-align: start;
+}
+
+/* title area */
+.app-title {
+  font-weight: 800;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.app-title span {
+  color: #4A80F0;
+  border-bottom: 2.6px solid #4A80F0;
+}
+/* search bar area */
+.app-search-engine{
+  padding: 16px 24px;
+  border-radius: 12px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-menu-icon{
+  color: #4A80F0;
+  font-size: 16px;
+}
+.app-search-bar{
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 16px;
+}
+.app-search-button{
+  background:white;
+  border: none;
+}
+
+
+
+
+.App-footer{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 200;
+  line-height: 12px;
+}
