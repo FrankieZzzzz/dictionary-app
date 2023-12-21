@@ -29,22 +29,38 @@ export default function Results(props){
             </section>
         )
     }else{
-        // console.log(props.results.meanings[0].definitions[0].definition);
+        console.log(props.resultsContent);
         return(
-        <div className="Results">
-            <section id="results-section">
-                <h2>{props.resultsContent.word}</h2>
-                <p>
-                {props.resultsContent.meanings.map(function(meaning,index){
-                    return(
-                        <div key={index}>
-                            <Meaning meaning={meaning}/>
+            <div className="Results">
+                <section id="results-section">
+                    <div id="results-title-section">
+                        <div id="results-title">
+                            <h2>{props.resultsContent.word}</h2>
+                            <span>  
+                                {/* <audio controls>
+                                    <source src={props.resultsContent.phonetics[1].audio} type="audio/mp3" />
+                                </audio> */}
+                                {props.resultsContent.phonetics[0].text}
+                            </span>
                         </div>
-                    )
-                })}
-                </p>
-            </section>
-        </div>
+                        <i className="fa-regular fa-heart"></i>
+                    </div>
+                    <hr />
+                    <div>
+                        <p class="meaning-title">Dictionary definition</p>
+                        <p>
+                            {props.resultsContent.meanings.map(function(meaning,index){
+                                return(
+                                    <div key={index}>
+                                        <Meaning meaning={meaning}/>
+                                    </div>
+                                )
+                            })}
+                        </p>
+                    </div>
+                    <hr />
+                </section>
+            </div>
     )
     }
 }

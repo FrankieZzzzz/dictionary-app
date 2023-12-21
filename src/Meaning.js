@@ -1,10 +1,10 @@
 import React from "react";
 
 export default function Meaning(props){
-    console.log(props.meaning);
+    // console.log(props.meaning);
     return(
        <div className="app-meaning">
-        <h4>{props.meaning.partOfSpeech}</h4>
+        <h3>{props.meaning.partOfSpeech}</h3>
         {props.meaning.definitions.map(function(definition,index){
             const getIndex = (index) => index + 1;
 

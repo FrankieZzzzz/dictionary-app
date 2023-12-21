@@ -7,7 +7,7 @@ import './App.css';
 export default function Dictionary(){
     let [keyValue, setKeyValue] = useState(null);
     let [resultsValue, setResultsValue] = useState(null)
-    console.log(resultsValue);
+    // console.log(resultsValue);
     // connect to api
     function Searching(event){
         event.preventDefault()

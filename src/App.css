@@ -15,6 +15,10 @@
   height: 100vh;
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+main{
+  height: max-content;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
 .Dictionary-app{
   padding: 65px 24px 0px 24px;
   text-align: start;
@@ -36,7 +40,7 @@
 }
 /* search bar area */
 .app-search-engine{
-  padding: 16px 24px;
+  padding: 16px 34px;
   border-radius: 12px;
   width: 100%;
   background-color: white;
@@ -67,12 +71,16 @@
 }
 
 /* recent search section */
+.meaning-title{
+  color: var(--app-blue);
+  font-weight: 500;
+}
 #recent-search-section,
 #results-section{
   background: white;
   border-radius: 12px;
   width: 100%;
-  padding: 32px 24px;
+  padding: 32px 34px;
   margin-top: 22px;
   box-shadow: var(--app-shadow);
 }
@@ -82,13 +90,32 @@
   justify-content: space-between;
   padding: 27px 0px 0px 0px;
 }
-.recent-search-word i{
+.recent-search-word i,
+#results-title-section i{
   font-size: 20px;
   color: var(--app-blue);
   font-weight: 400;
 }
+#results-title-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#results-title h2{
+  display: inline;
+  padding-right: 10px;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+
+
+
+
+
 .App-footer{
-  margin-top: 20px;
+  padding: 20px;
   text-align: center;
   font-size: 11px;
   font-weight: 200;
