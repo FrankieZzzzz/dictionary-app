@@ -67,7 +67,8 @@
 }
 
 /* recent search section */
-#recent-search-section{
+#recent-search-section,
+#results-section{
   background: white;
   border-radius: 12px;
   width: 100%;
