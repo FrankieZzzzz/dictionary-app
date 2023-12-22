@@ -96,7 +96,7 @@ main{
   color: var(--app-blue);
   font-weight: 400;
 }
-#results-title-section{
+#results-title{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -111,8 +111,12 @@ main{
 .synonyms-list span{
   padding-right:20px;
 }
-
-
+.playAudioBtn{
+  padding-right: 10px;
+}
+.phonetics-loop{
+  margin-top: 5px;
+}
 
 
 
