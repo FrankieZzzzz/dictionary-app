@@ -1,0 +1,38 @@
+/* recent search section */
+.meaning-title {
+    color: var(--app-blue);
+    font-weight: 600;
+}
+#suggested-search-section,
+.results-section {
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    padding: 24px 34px;
+    margin-top: 22px;
+    box-shadow: var(--app-shadow);
+}
+.suggested-search-word {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 0px 0px;
+}
+.suggested-search-word i,
+#results-title-section i {
+    font-size: 20px;
+    color: var(--app-blue);
+    font-weight: 400;
+}
+#results-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#results-title h2 {
+    display: inline;
+    padding-right: 10px;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 600;
+}

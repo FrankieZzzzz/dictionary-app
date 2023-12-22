@@ -24,107 +24,20 @@ main{
   text-align: start;
 }
 
-/* title area */
-.app-title {
-  font-weight: 800;
-  font-size: 24px;
-  font-style: normal;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  padding: 0px 10px;
-}
-.app-title span {
-  color: var(--app-blue);
-  border-bottom: 2.6px solid #4A80F0;
-}
-/* search bar area */
-.app-search-engine{
-  padding: 16px 34px;
-  border-radius: 12px;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 28px;
-  box-shadow: var(--app-shadow);
-}
-.app-menu-icon{
-  color: #4A80F0;
-  font-size: 16px;
-}
-.app-search-engine-left{
-  width: 100%;
-}
-.app-search-bar{
-  outline: none;
-  border: none;
-  font-size: 16px;
-  font-weight: 400;
-  padding-left: 16px;
-  width: 90%;
-}
-.app-search-button{
-  background:white;
-  border: none;
-}
-
-/* recent search section */
-.meaning-title{
-  color: var(--app-blue);
-  font-weight: 600;
-}
-#recent-search-section,
-#results-section{
-  background: white;
-  border-radius: 12px;
-  width: 100%;
-  padding: 32px 34px;
-  margin-top: 22px;
-  box-shadow: var(--app-shadow);
-}
-.recent-search-word{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 27px 0px 0px 0px;
-}
-.recent-search-word i,
-#results-title-section i{
-  font-size: 20px;
-  color: var(--app-blue);
-  font-weight: 400;
-}
-#results-title{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-#results-title h2{
-  display: inline;
-  padding-right: 10px;
-  text-transform: capitalize;
-  font-size: 40px;
-  font-weight: 600;
-}
 .synonyms-list span{
   padding-right:20px;
-}
-.playAudioBtn{
-  padding-right: 0px;
 }
 .phonetics-loop{
   margin-top: 5px;
   width: 100%;
 }
-.phonetics-text{
-  padding: 0px 2px;
-}
 .phonetics-section{
-  padding: 0px 4px;
-  
+  padding-right: 0px;
 }
+.phonetics-text{
+  padding-right: 12px;
+}
+/* footer */
 .App-footer{
   padding: 20px;
   text-align: center;

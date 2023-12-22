@@ -1,0 +1,53 @@
+/* title area */
+.app-title {
+    font-weight: 800;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0px 10px;
+}
+.app-title span {
+    color: var(--app-blue);
+    border-bottom: 2.6px solid #4A80F0;
+}
+/* search bar area */
+#search-section{
+    margin-top: 30px;
+}
+.intro-title{
+    margin: 0px;
+    padding: 10px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    
+}
+.app-search-engine {
+    padding: 16px 34px;
+    border-radius: 12px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--app-shadow);
+}
+.app-menu-icon {
+    color: #4A80F0;
+    font-size: 16px;
+}
+.app-search-engine-left {
+    width: 100%;
+}
+.app-search-bar {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    width: 90%;
+}
+.app-search-button {
+    background: white;
+    border: none;
+}
