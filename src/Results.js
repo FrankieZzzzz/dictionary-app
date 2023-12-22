@@ -38,17 +38,16 @@ export default function Results(props){
                         <div id="results-title">
                             <h2>{props.resultsContent.word}</h2>
                             <i className="fa-regular fa-heart"></i>
-                            
                         </div>
                         <div className="phonetics-loop">  
-                                {props.resultsContent.phonetics.map(function(phonetics,index){
-                                    return(
-                                        <span key={index}>
-                                            <Phonetics phonetics={phonetics}/>
-                                        </span>
-                                    )
-                                })}
-                            </div>
+                            {props.resultsContent.phonetics.map(function(phonetics,index){
+                                return(
+                                    <span key={index} className="phonetics-section">
+                                        <Phonetics phonetics={phonetics}/>
+                                    </span>
+                                )
+                            })}
+                        </div>
                     </div>
                     <hr />
                     {/* definition and synonyms*/}
