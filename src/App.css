@@ -10,7 +10,7 @@
   font-family: 'Raleway', sans-serif;
   color: var(--app-black)
 }
-.App{
+#root{
   width: 100vw;
   height: 100vh;
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -20,6 +20,8 @@ main{
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 .Dictionary-app{
+  max-width: 760px;
+  margin: 0px auto;
   padding: 65px 24px 0px 24px;
   text-align: start;
 }

@@ -9,10 +9,15 @@ export default function Dictionary(props){
     let [resultsValue, setResultsValue] = useState(null)
     let [loaded, setLoaded] = useState(false);
     // console.log(resultsValue);
-    // connect to api
+    // connect to pexels image api
+    
+    // connect to dictionary api
     function Searching(event){
         event.preventDefault()
-        apiCall()
+        apiCall();
+    }
+    function getPexelImage(response){
+        console.log(response);
     }
     // run api function
     function dictionaryFunction(response){
@@ -22,7 +27,15 @@ export default function Dictionary(props){
     function apiCall(){
         let dictionaryAPI = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyValue}`;
         axios.get(dictionaryAPI).then(dictionaryFunction);
+
+        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyValue}&per_page=1`;
+        let pexelsApiKey = "7AZZqOI2GDW94yigYodcbytHN57CRjmoZujOk4t0qq2nAPoE08WQjgv3";
+            
+        let headers = {"Authorization" : `Bearer ${pexelsApiKey}`}
+        axios.get(pexelsApiUrl, { headers: headers })
+        .then(getPexelImage);
     }
+
     // get searching value
     function getSearchValue(event){
         event.preventDefault();

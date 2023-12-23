@@ -31,7 +31,7 @@ export default function Results(props){
             </section>
         )
     }else{
-        console.log(props.resultsContent);
+        // console.log(props.resultsContent);
         return(
             <div className="Results">
                 <section class="results-section">
@@ -64,19 +64,22 @@ export default function Results(props){
                                         <hr />
                                     </div>
                                 )
-                            })}
+                        })}
                     </div>
                 </section>
-                <section class="results-section">
-                     <p class="meaning-title">Synonyms</p>
-                        {props.resultsContent.meanings.map(function(meaning,index){
-                            return(
-                                <div key={index}>
-                                    <Synonyms synonyms={meaning.synonyms}/>
-                                </div>
-                            )
-                        })}
-                </section>
+                {/* synonyms section */}
+                {props.resultsContent.meanings.map(function(meanings,index){
+                    if (meanings.synonyms.length === 0) {
+                        return null
+                    }else{
+                        return(
+                            <div key={index}>
+                                <Synonyms synonyms={meanings.synonyms}/>
+                            </div>
+                    )
+                    }
+                    
+                })}
             </div>
     )
     }
