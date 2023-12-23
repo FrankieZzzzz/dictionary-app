@@ -5,6 +5,7 @@
 }
 #suggested-search-section,
 .results-section {
+    width: 100%;
     background: white;
     border-radius: 12px;
     width: 100%;

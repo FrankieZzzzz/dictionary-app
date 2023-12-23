@@ -1,8 +1,8 @@
 import React from "react";
 import './Results.css';
 import Meaning from "./Meaning";
-import Synonyms from "./Synonyms";
 import Phonetics from "./Phonetics";
+import SynonymsSection from "./SynonymsSection";
 
 export default function Results(props){
     if (props.resultsContent === null) {
@@ -53,6 +53,7 @@ export default function Results(props){
                     </div>
                     
                 </section>
+                
                 <section class="results-section">
                     {/* definition and synonyms*/}
                     <div>
@@ -68,19 +69,8 @@ export default function Results(props){
                     </div>
                 </section>
                 {/* synonyms section */}
-                {props.resultsContent.meanings.map(function(meanings,index){
-                    if (meanings.synonyms.length === 0) {
-                        return null
-                    }else{
-                        return(
-                            <div key={index}>
-                                <Synonyms synonyms={meanings.synonyms}/>
-                            </div>
-                    )
-                    }
-                    
-                })}
+                <SynonymsSection synonymsContent={props.resultsContent} />
             </div>
-    )
+        )
     }
 }
