@@ -31,8 +31,8 @@ To see the app in action, visit [Simple Dictionary App]([https://simpledictionar
 | Color           | Hex      |
 | --------------- | -------- |
 | Dark Grey       |![Dark Grey](https://via.placeholder.com/15/383838/000000?text=+)  #383838  |
-| Sky Blue        |![Dark Grey](https://via.placeholder.com/15/4A80F0/000000?text=+) #4A80F0  |
-| Pink            |![Orange](https://via.placeholder.com/15/fa71cd/000000?text=+) #fa71cd  |
-| white           |![Light Navy](https://via.placeholder.com/15/ffffff/000000?text=+) #ffffff  |
+| Sky Blue        |![Sky Blue](https://via.placeholder.com/15/4A80F0/000000?text=+) #4A80F0  |
+| Pink            |![Pink](https://via.placeholder.com/15/fa71cd/000000?text=+) #fa71cd  |
+| white           |![white](https://via.placeholder.com/15/ffffff/000000?text=+) #ffffff  |
 
 Feel free to explore and contribute to this project. If you have any suggestions or find issues, please create a GitHub issue. Thanks for visiting the Simple Dictionary App! 
