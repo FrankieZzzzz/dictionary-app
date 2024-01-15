@@ -23,7 +23,6 @@ export default function Dictionary(props){
     }
     // run api function
     function dictionaryFunction(response){
-        // console.log(response.data[0].meanings[0].definitions[0].definition);
         setResultsValue(response.data[0])
     }
     function apiCall(){
