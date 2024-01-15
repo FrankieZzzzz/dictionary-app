@@ -12,8 +12,6 @@ export default function Phonetics(props){
                     <span className="phonetics-text">{props.phonetics.text}</span>
                 </>
             )}
-            {/* <PlayAudio audioSrc={props.phonetics.audio}/>
-            <span className="phonetics-text">{props.phonetics.text}</span> */}
         </span>
     )
     
