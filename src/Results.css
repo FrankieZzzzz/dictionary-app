@@ -37,3 +37,12 @@
     font-size: 40px;
     font-weight: 600;
 }
+
+#results-title button{
+    border: none;
+    background: none;
+}
+.likeBtn svg{
+    font-size: 20px;
+    color: #fa71cd;
+}

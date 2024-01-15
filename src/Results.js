@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import './Results.css';
 import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
 import SynonymsSection from "./SynonymsSection";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons';
+import { faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
 
 export default function Results(props){
+    const [like, setLike] = useState(false);
+    const clickLike = () => {
+        setLike(!like);
+    }
+
+
     if (props.resultsContent === null) {
         return(
             // add default key word when user loading the page, may need to delet this part
@@ -38,8 +47,12 @@ export default function Results(props){
                     <div id="results-title-section">
                         <div id="results-title">
                             <h2>{props.resultsContent.word}</h2>
-                            <i className="fa-regular fa-heart"></i>
+                            {/* <button className='likeBtn' onClick={clickLike}><i className={`${like ? 'fa-solid' : 'fa-regular'} fa-heart`} ></i></button> */}
+                            <button className='likeBtn' onClick={clickLike}>
+                                {like ? <FontAwesomeIcon icon={solidHeart} /> : <FontAwesomeIcon icon={farHeart} />}
+                            </button>
                         </div>
+                
                         <div className="phonetics-loop">  
                        
                             {props.resultsContent.phonetics.map(function(phonetics,index){
