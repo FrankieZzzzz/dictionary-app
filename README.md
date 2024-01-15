@@ -34,4 +34,4 @@ To see the app in action, visit [Simple Dictionary App]([https://simpledictionar
 | Pink            |![Orange](https://via.placeholder.com/15/fa71cd/000000?text=+) #fa71cd  |
 | white           |![Light Navy](https://via.placeholder.com/15/ffffff/000000?text=+) #ffffff  |
 
-Feel free to explore and contribute to this project. If you have any suggestions or find issues, please create a GitHub issue. Thanks for visiting the Simple Dictionary App! 🌆
+Feel free to explore and contribute to this project. If you have any suggestions or find issues, please create a GitHub issue. Thanks for visiting the Simple Dictionary App! 
