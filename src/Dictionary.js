@@ -3,6 +3,8 @@ import axios from "axios";
 import Results from "./Results"
 import './Dictionary.css';
 import Photo from "./Photo"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Dictionary(props){
@@ -56,10 +58,11 @@ export default function Dictionary(props){
                     <p className="intro-title">What word do you want to look up?</p>
                     <form className="app-search-engine" onSubmit={Searching}>
                         <div className="app-search-engine-left">
-                            {/* <i className="fa-solid fa-bars app-menu-icon"></i> */}
                             <input type="search" autoFocus={true} className="app-search-bar" placeholder="Search" onChange={getSearchValue}/>
                         </div>
-                        <button className="app-search-button" type="submit"><i className="fa-solid fa-magnifying-glass app-menu-icon" onClick={Searching}></i></button>
+                        <button className="app-search-button" type="submit">
+                            <FontAwesomeIcon icon={faSearch} onClick={Searching}/>
+                        </button>
                     </form>
                 </div>
                 <Results resultsContent={resultsValue}/>

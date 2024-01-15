@@ -52,3 +52,7 @@
     background: white;
     border: none;
 }
+.app-search-button svg{
+    font-size: 20px;
+        color: #4A80F0;
+}
