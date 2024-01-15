@@ -1,4 +1,10 @@
 /* title area */
+.Dictionary-app {
+    max-width: 760px;
+    margin: 0px auto;
+    padding: 65px 24px 0px 24px;
+    text-align: start;
+}
 .app-title {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -51,6 +57,7 @@
 .app-search-button {
     background: white;
     border: none;
+    cursor: pointer;
 }
 .app-search-button svg{
     font-size: 20px;

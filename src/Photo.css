@@ -1,7 +1,8 @@
-#searchImage {
-    width: 100%;
-    border-radius: 8px;
-}
-#image-section{
+#image-section {
     margin: 8px 0px;
+}
+
+#searchImage {
+    max-width: 100%;
+    border-radius: 8px;
 }
