@@ -1,6 +1,6 @@
 # Simple Dictionary App 📖
 <p align="center">
- <img width="500" alt="snapshot for page" src="src/assets/Dictionary.png">
+ <img width="500" alt="snapshot for page" src="src/assets/xp1398-jpg.jpg">
 </p>
 
 This application is designed to provide you with a straightforward and user-friendly way to explore and learn new words.
