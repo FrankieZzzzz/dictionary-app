@@ -14,6 +14,7 @@ This application is designed to provide you with a straightforward and user-frie
 ## Technologies / Tool Used 🛠
 - React
 - HTML & CSS
+- Bootstrap
 - Dictionary API
 - Unsplash API
 - Figma
