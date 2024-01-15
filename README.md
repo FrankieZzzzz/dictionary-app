@@ -3,12 +3,12 @@
  <img width="500" alt="snapshot for page" src="src/assets/Dictionary.png">
 </p>
 
-Welcome to my Toronto Weather App, my first React project! This app provides you with the latest weather information for any city in the world and offers a delightful user experience.
+This application is designed to provide you with a straightforward and user-friendly way to explore and learn new words.
 
 ## Features 
 
 - **Search Functionality**: Easily search for explain for any words.
-- **Related Photos**: Cityscape photos sourced from [Unsplash API](https://unsplash.com/).
+- **Related Photos**: Related photos sourced from [Unsplash API](https://unsplash.com/).
 - **Dictionary Api**: Dictionary sourced from [Dictionary API](https://www.dictionaryapi.dev/).
 
 ## Technologies / Tool Used 🛠
